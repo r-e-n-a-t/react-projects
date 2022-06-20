@@ -1,13 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-async function getData() {
-  const result = await fetch("https://api.pi.delivery/v1/pi?start=0&numberOfDigits=100");
-  if(!result.ok) {
-      throw new Error(`Could not a Fetch, status ${result.status}`);
-  }
-  return await result.text();
-}
+
 
 function App() {
 
@@ -42,10 +36,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          google
+          google.ru
         </a>
         <p>
-          {pi}
+          
         </p>
       </header>
     </div>
